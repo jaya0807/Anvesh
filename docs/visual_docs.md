@@ -1,19 +1,99 @@
-# ANVESH Ground Station Interface
+# ANVESH Visual Documentation
 
-Below are the core mission control interfaces available to operators in the React Dashboard.
+A comprehensive visual reference of the ANVESH disaster-response robot — from physical hardware to the ground station dashboard.
 
-### 1. AI Vision
-The primary optical feed overlaid with 4 simultaneous Neural Networks (Survivors, Fire/Smoke, Debris/Cracks, and MiDaS Depth Mapping).
-![AI Vision](../images/ai_vision.png)
+---
 
-### 2. LIDAR Map
+## 🤖 Robot Hardware
+
+### 1. Anvesh Bot — View 1
+Front-facing view of the ANVESH robot chassis with sensor array and camera mount.
+![Anvesh Bot 1](../images/anvesh%20bot%201.jpeg)
+
+### 2. Anvesh Bot — View 2
+Side profile showing the drive system and relay node deployment mechanism.
+![Anvesh Bot 2](../images/anvesh%20bot%202.jpeg)
+
+### 3. Anvesh Bot — View 3
+Top-down view highlighting the onboard compute unit and wiring layout.
+![Anvesh Bot 3](../images/anvesh%20bot%203.jpeg)
+
+### 4. Anvesh Bot — View 4
+Rear view displaying battery pack, motor controllers, and communication modules.
+![Anvesh Bot 4](../images/anvesh%20bot%204.jpeg)
+
+### 5. Anvesh Bot — View 5
+Close-up of the sensor cluster including LiDAR, BME680 gas sensor, and depth camera.
+![Anvesh Bot 5](../images/anvesh%20bot%205.jpeg)
+
+---
+
+## 🔩 CAD Design (Fusion 360)
+
+### 6. Fusion 360 CAD Design — View 1
+Overall assembly render of the ANVESH robot frame in Fusion 360.
+![Fusion 360 CAD Design 1](../images/fusion%20360%20Cad%20Design%201.jpeg)
+
+### 7. Fusion 360 CAD Design — View 2
+Exploded view showing individual chassis components and their fit.
+![Fusion 360 CAD Design 2](../images/fusion%20360%20Cad%20Design%202.jpeg)
+
+### 8. Fusion 360 CAD Design — View 3
+Drivetrain and wheel assembly detail from the CAD model.
+![Fusion 360 CAD Design 3](../images/fusion%20360%20Cad%20Design%203.jpeg)
+
+### 9. Fusion 360 CAD Design — View 4
+Relay node housing and ejection mechanism in CAD.
+![Fusion 360 CAD Design 4](../images/fusion%20360%20Cad%20Design%204.jpeg)
+
+### 10. Fusion 360 CAD Design — View 5
+Sensor mounting bracket and top-plate assembly.
+![Fusion 360 CAD Design 5](../images/fusion%20360%20Cad%20Design%205.jpeg)
+
+### 11. Fusion 360 CAD Design — View 6
+Final full-assembly render with all sub-systems integrated.
+![Fusion 360 CAD Design 6](../images/fusion%20360%20Cad%20Design%206.jpeg)
+
+---
+
+## 📡 Relay Network & Nodes
+
+### 12. Relay Node (Hardware)
+Physical relay node unit used as a communication breadcrumb inside tunnels and debris fields.
+![Relay Node](../images/relay%20node.jpeg)
+
+### 13. Auto Relay Node Dropping Mechanism
+The automated deployment arm that physically drops relay nodes at timed or distance-triggered intervals during a mission.
+![Auto Relay Node Dropping Mechanism](../images/auto%20relay%20node%20dropping%20mechanism.jpeg)
+
+### 14. Relay Network Topology
+Simulated LoRa mesh network diagram showing the 6-step state machine and multi-hop communication chain from robot to operator.
+![Relay Network](../images/relay%20network.png)
+
+---
+
+## 🖥️ Ground Station Dashboard
+
+### 15. AI Vision
+The primary optical feed overlaid with 4 simultaneous Neural Networks — Survivors, Fire/Smoke, Debris/Cracks, and MiDaS Depth Mapping.
+![AI Vision](../images/ai%20vision.png)
+
+### 16. LIDAR Map
 Real-time 2D SLAM mapping and point cloud visualization for subterranean navigation in zero-visibility environments.
 ![LIDAR Map](../images/lidar_map.png)
 
-### 3. Sensors Page
+### 17. Sensors & Telemetry
 Live telemetry from the onboard BME680 array monitoring toxic gases (VOCs), temperature spikes, and pressure drops to predict structural failures.
-![Sensors Page](../images/sensors_page.png)
+![Sensors Telemetry](../images/sensors%20telemetry.png)
 
-### 4. Relay Node
-Simulated LoRa mesh network topology and the 6-step state machine for dropping physical communication breadcrumbs deep inside tunnels.
-![Relay Node](../images/relay_node.png)
+### 18. Relay Node Dashboard Panel
+Dashboard view of the LoRa mesh network topology and relay node state machine for the ground station operator.
+![Relay Node Panel](../images/relay_node.png)
+
+---
+
+## 🏷️ Banner
+
+### 19. ANVESH Banner
+Official project banner for the ANVESH disaster-response autonomous robot.
+![ANVESH Banner](../images/anvesh_banner.png)
